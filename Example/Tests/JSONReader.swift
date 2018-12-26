@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+class JSONReader {
+    
+    class func read(_ fileName: String?) -> Any? {
+        guard let path = Bundle(for: self).path(forResource: fileName, ofType: "json") else { return nil }
+        let url = URL(fileURLWithPath: path)
+        do {
+            let data = try Data(contentsOf: url)
+            return try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+        } catch {
+            return nil
+        }
+    }
+    
+}

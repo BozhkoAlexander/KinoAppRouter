@@ -9,18 +9,26 @@
 /* Begin PBXBuildFile section */
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		EBB77F7BF44227718E11AAB7 /* Pods_KinoAppRouter_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 731EF78CB8B56BE7381CF12E /* Pods_KinoAppRouter_Tests.framework */; };
+		FA9C6E0921D3697400DDCA7E /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = FA9C6E0821D3697400DDCA7E /* movies.json */; };
+		FA9C6E0B21D3699E00DDCA7E /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */; };
+		FA9C6E0D21D374C900DDCA7E /* Router+Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */; };
+		FA9C6E1121D37E7800DDCA7E /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1021D37E7800DDCA7E /* TestError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		261434D52EA0BBD487F35107 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		261434D52EA0BBD487F35107 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* KinoAppRouter_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KinoAppRouter_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		731EF78CB8B56BE7381CF12E /* Pods_KinoAppRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoAppRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DDBBF0D91451AE498E2C6A /* Pods-KinoAppRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoAppRouter_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KinoAppRouter_Tests/Pods-KinoAppRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		9EDA032E102316A4CA5B8B3F /* KinoAppRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = KinoAppRouter.podspec; path = ../KinoAppRouter.podspec; sourceTree = "<group>"; };
+		9EDA032E102316A4CA5B8B3F /* KinoAppRouter.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KinoAppRouter.podspec; path = ../KinoAppRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B91D2CDCAFEEFEA58CA35D68 /* Pods-KinoAppRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KinoAppRouter_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KinoAppRouter_Tests/Pods-KinoAppRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F08BC64F91C925F9D4504F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F08BC64F91C925F9D4504F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA9C6E0821D3697400DDCA7E /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
+		FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Movie.swift"; sourceTree = "<group>"; };
+		FA9C6E1021D37E7800DDCA7E /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */,
+				FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */,
+				FA9C6E1021D37E7800DDCA7E /* TestError.swift */,
+				FA9C6E0821D3697400DDCA7E /* movies.json */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -127,17 +139,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						DevelopmentTeam = 9DFU33V8T6;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -164,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9C6E0921D3697400DDCA7E /* movies.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA9C6E1121D37E7800DDCA7E /* TestError.swift in Sources */,
+				FA9C6E0D21D374C900DDCA7E /* Router+Movie.swift in Sources */,
+				FA9C6E0B21D3699E00DDCA7E /* JSONReader.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,12 +252,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -293,12 +307,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -331,10 +347,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B91D2CDCAFEEFEA58CA35D68 /* Pods-KinoAppRouter_Tests.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = 9DFU33V8T6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -343,9 +357,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoAppRouter_Example.app/KinoAppRouter_Example";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -353,17 +365,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80DDBBF0D91451AE498E2C6A /* Pods-KinoAppRouter_Tests.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				DEVELOPMENT_TEAM = 9DFU33V8T6;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KinoAppRouter_Example.app/KinoAppRouter_Example";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

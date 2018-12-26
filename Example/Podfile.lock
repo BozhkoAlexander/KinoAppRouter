@@ -1,0 +1,16 @@
+PODS:
+  - KinoAppRouter (0.1.0)
+
+DEPENDENCIES:
+  - KinoAppRouter (from `../`)
+
+EXTERNAL SOURCES:
+  KinoAppRouter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KinoAppRouter: c7564904dff32ab622d852f88cb4a7c2cf995d9f
+
+PODFILE CHECKSUM: 3849ac1166960cd510960d46eaa99bcdcc0e0f5d
+
+COCOAPODS: 1.5.3

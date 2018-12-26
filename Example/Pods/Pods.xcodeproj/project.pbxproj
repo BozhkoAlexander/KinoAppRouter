@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28ACC850DE6D9382DB7C9DB6E6968292 /* Pods-KinoAppRouter_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02FAF57732417BCBCC7DBE78BB0E3D52 /* Pods-KinoAppRouter_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36CC0FCD5DA10E26D5F8749591FE21D7 /* Pods-KinoAppRouter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCB580F716FBD0845EF453BF3A88CEB /* Pods-KinoAppRouter_Tests-dummy.m */; };
+		6E7A062CC230966696B55A0B3B09052C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		81A493E904D690DAD04BDA068B004102 /* KinoAppRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740066561ED6072C516C70A4ABFEFEEE /* KinoAppRouter-dummy.m */; };
+		93D7687F70618D3B7D984E4CA4B70F63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B8708202052B5F99F7D48956EB6669CE /* KinoAppRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5693AA6824A6C49D7343C95E5458B2EB /* KinoAppRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA9C6E1621D3B71B00DDCA7E /* Router+PageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */; };
+		FA9C6E1821D3B71B00DDCA7E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1521D3B71B00DDCA7E /* Router.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6E105AC517BFC820D69C39AAF787C72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA0608360A34F513ECF2D35B6CCDD104;
+			remoteInfo = KinoAppRouter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FAF57732417BCBCC7DBE78BB0E3D52 /* Pods-KinoAppRouter_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KinoAppRouter_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0CCB580F716FBD0845EF453BF3A88CEB /* Pods-KinoAppRouter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KinoAppRouter_Tests-dummy.m"; sourceTree = "<group>"; };
+		1676957C9A22747DE44D9F54317A087D /* Pods-KinoAppRouter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KinoAppRouter_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		196134BB04D49B3D1D1120823E3C8D07 /* KinoAppRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KinoAppRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6396FA8A8549B2F7C77AC04B996D13 /* Pods-KinoAppRouter_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KinoAppRouter_Tests.modulemap"; sourceTree = "<group>"; };
+		3C9B77E7DA403DC53C5DC35293AF1062 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		53377F94B09DFA504CC4205B28D2EAB6 /* KinoAppRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = KinoAppRouter.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		541D5EA168ED3F17BB3EC66385BEB75C /* Pods_KinoAppRouter_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KinoAppRouter_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5693AA6824A6C49D7343C95E5458B2EB /* KinoAppRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KinoAppRouter-umbrella.h"; sourceTree = "<group>"; };
+		57CD5D55E16BF2822B9769E65B9619CC /* Pods-KinoAppRouter_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KinoAppRouter_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5FD844FAE9FBC927D0CB18FD0477C014 /* Pods-KinoAppRouter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KinoAppRouter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		60BEC5F9DB3EBC77ADA53C016231270D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6DE7E1E429A3ECE74D022B9312FF4506 /* Pods-KinoAppRouter_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KinoAppRouter_Tests-resources.sh"; sourceTree = "<group>"; };
+		740066561ED6072C516C70A4ABFEFEEE /* KinoAppRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KinoAppRouter-dummy.m"; sourceTree = "<group>"; };
+		7977DD455FCAFE3376F5997AA6E6F110 /* KinoAppRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KinoAppRouter.modulemap; sourceTree = "<group>"; };
+		8B7CFC4576F931A51ABB0DF77F73B5BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AB2B9249538E81AD83910CF81E5CEA7 /* KinoAppRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KinoAppRouter-prefix.pch"; sourceTree = "<group>"; };
+		ACBB9A6B9C3F88A3BDF94DE2F383D92C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E65D36C829F4FCA98A455D933E6BFE01 /* KinoAppRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KinoAppRouter.xcconfig; sourceTree = "<group>"; };
+		E9C84E1B00B2D37648070BF277B304DB /* Pods-KinoAppRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KinoAppRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+PageConfig.swift"; sourceTree = "<group>"; };
+		FA9C6E1521D3B71B00DDCA7E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		FF360F93ACDBCEDF2E4167F583FB8DDD /* Pods-KinoAppRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KinoAppRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74ABD80B64DEAA29B131A11D46F4A3B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7A062CC230966696B55A0B3B09052C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF0C414C8DA36E21D393D3EEA102714 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D7687F70618D3B7D984E4CA4B70F63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1594D87010AACDE1A0C5758DDD3E8DA1 /* Pods-KinoAppRouter_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ACBB9A6B9C3F88A3BDF94DE2F383D92C /* Info.plist */,
+				2B6396FA8A8549B2F7C77AC04B996D13 /* Pods-KinoAppRouter_Tests.modulemap */,
+				FF360F93ACDBCEDF2E4167F583FB8DDD /* Pods-KinoAppRouter_Tests-acknowledgements.markdown */,
+				E9C84E1B00B2D37648070BF277B304DB /* Pods-KinoAppRouter_Tests-acknowledgements.plist */,
+				0CCB580F716FBD0845EF453BF3A88CEB /* Pods-KinoAppRouter_Tests-dummy.m */,
+				57CD5D55E16BF2822B9769E65B9619CC /* Pods-KinoAppRouter_Tests-frameworks.sh */,
+				6DE7E1E429A3ECE74D022B9312FF4506 /* Pods-KinoAppRouter_Tests-resources.sh */,
+				02FAF57732417BCBCC7DBE78BB0E3D52 /* Pods-KinoAppRouter_Tests-umbrella.h */,
+				5FD844FAE9FBC927D0CB18FD0477C014 /* Pods-KinoAppRouter_Tests.debug.xcconfig */,
+				1676957C9A22747DE44D9F54317A087D /* Pods-KinoAppRouter_Tests.release.xcconfig */,
+			);
+			name = "Pods-KinoAppRouter_Tests";
+			path = "Target Support Files/Pods-KinoAppRouter_Tests";
+			sourceTree = "<group>";
+		};
+		2809E607DA7C624F9EFB2F2AA8CE1747 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				53377F94B09DFA504CC4205B28D2EAB6 /* KinoAppRouter.podspec */,
+				3C9B77E7DA403DC53C5DC35293AF1062 /* LICENSE */,
+				60BEC5F9DB3EBC77ADA53C016231270D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3DB6C6EC94B77E0CB99858C8922A51E0 /* KinoAppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				FA9C6E1221D3B71B00DDCA7E /* Classes */,
+				2809E607DA7C624F9EFB2F2AA8CE1747 /* Pod */,
+				8F49CAE06387ABAFE26C95531140CB68 /* Support Files */,
+			);
+			name = KinoAppRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		44A442C7AF6975B60285D2FE32A024AE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DB6C6EC94B77E0CB99858C8922A51E0 /* KinoAppRouter */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4C4735F4CD934C863255297B507262EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				196134BB04D49B3D1D1120823E3C8D07 /* KinoAppRouter.framework */,
+				541D5EA168ED3F17BB3EC66385BEB75C /* Pods_KinoAppRouter_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55AE9289F734B4FA0E4670580249CA61 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1594D87010AACDE1A0C5758DDD3E8DA1 /* Pods-KinoAppRouter_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				44A442C7AF6975B60285D2FE32A024AE /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4C4735F4CD934C863255297B507262EA /* Products */,
+				55AE9289F734B4FA0E4670580249CA61 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8F49CAE06387ABAFE26C95531140CB68 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B7CFC4576F931A51ABB0DF77F73B5BA /* Info.plist */,
+				7977DD455FCAFE3376F5997AA6E6F110 /* KinoAppRouter.modulemap */,
+				E65D36C829F4FCA98A455D933E6BFE01 /* KinoAppRouter.xcconfig */,
+				740066561ED6072C516C70A4ABFEFEEE /* KinoAppRouter-dummy.m */,
+				9AB2B9249538E81AD83910CF81E5CEA7 /* KinoAppRouter-prefix.pch */,
+				5693AA6824A6C49D7343C95E5458B2EB /* KinoAppRouter-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/KinoAppRouter";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9C6E1221D3B71B00DDCA7E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */,
+				FA9C6E1521D3B71B00DDCA7E /* Router.swift */,
+			);
+			name = Classes;
+			path = KinoAppRouter/Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C95E266E1F4DD58464F3A8E07A7A29D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28ACC850DE6D9382DB7C9DB6E6968292 /* Pods-KinoAppRouter_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96784C3C8D631594FD997BA6D3EC8E38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8708202052B5F99F7D48956EB6669CE /* KinoAppRouter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AA0608360A34F513ECF2D35B6CCDD104 /* KinoAppRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95BB568E9DAC748C3E28F1CEB45AD519 /* Build configuration list for PBXNativeTarget "KinoAppRouter" */;
+			buildPhases = (
+				96784C3C8D631594FD997BA6D3EC8E38 /* Headers */,
+				3A7C2911BA9C891B975DFD234E4B653F /* Sources */,
+				74ABD80B64DEAA29B131A11D46F4A3B0 /* Frameworks */,
+				37C8FC41042EB7221CEC8A818D764AC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KinoAppRouter;
+			productName = KinoAppRouter;
+			productReference = 196134BB04D49B3D1D1120823E3C8D07 /* KinoAppRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ABF94875789219E6766B39830148EB96 /* Pods-KinoAppRouter_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C3B0EC0797814D67F596C83920CCC61 /* Build configuration list for PBXNativeTarget "Pods-KinoAppRouter_Tests" */;
+			buildPhases = (
+				1C95E266E1F4DD58464F3A8E07A7A29D /* Headers */,
+				093A14123C5F6DF42548F7105EC9D15B /* Sources */,
+				CAF0C414C8DA36E21D393D3EEA102714 /* Frameworks */,
+				7166DF8A18E1A6766F4FAC9DA406D740 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B867CD6EC9FF3F681ECDA61F19E29C2C /* PBXTargetDependency */,
+			);
+			name = "Pods-KinoAppRouter_Tests";
+			productName = "Pods-KinoAppRouter_Tests";
+			productReference = 541D5EA168ED3F17BB3EC66385BEB75C /* Pods_KinoAppRouter_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					AA0608360A34F513ECF2D35B6CCDD104 = {
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4C4735F4CD934C863255297B507262EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0608360A34F513ECF2D35B6CCDD104 /* KinoAppRouter */,
+				ABF94875789219E6766B39830148EB96 /* Pods-KinoAppRouter_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37C8FC41042EB7221CEC8A818D764AC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7166DF8A18E1A6766F4FAC9DA406D740 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093A14123C5F6DF42548F7105EC9D15B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36CC0FCD5DA10E26D5F8749591FE21D7 /* Pods-KinoAppRouter_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A7C2911BA9C891B975DFD234E4B653F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A493E904D690DAD04BDA068B004102 /* KinoAppRouter-dummy.m in Sources */,
+				FA9C6E1621D3B71B00DDCA7E /* Router+PageConfig.swift in Sources */,
+				FA9C6E1821D3B71B00DDCA7E /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B867CD6EC9FF3F681ECDA61F19E29C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KinoAppRouter;
+			target = AA0608360A34F513ECF2D35B6CCDD104 /* KinoAppRouter */;
+			targetProxy = C6E105AC517BFC820D69C39AAF787C72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50646285DD9FD95AF390BDA3FB1948EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AE65576B966724AF6BA605E5A015975E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E65D36C829F4FCA98A455D933E6BFE01 /* KinoAppRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KinoAppRouter/KinoAppRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KinoAppRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KinoAppRouter/KinoAppRouter.modulemap";
+				PRODUCT_MODULE_NAME = KinoAppRouter;
+				PRODUCT_NAME = KinoAppRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B0295E66C3AB4A108281BBC44CB97FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD844FAE9FBC927D0CB18FD0477C014 /* Pods-KinoAppRouter_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KinoAppRouter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KinoAppRouter_Tests/Pods-KinoAppRouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BA25186C18E813E058DF9B455DC78C24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1676957C9A22747DE44D9F54317A087D /* Pods-KinoAppRouter_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KinoAppRouter_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KinoAppRouter_Tests/Pods-KinoAppRouter_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDE2F5010D0E08E0F404B7A1FD508CA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E65D36C829F4FCA98A455D933E6BFE01 /* KinoAppRouter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KinoAppRouter/KinoAppRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KinoAppRouter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KinoAppRouter/KinoAppRouter.modulemap";
+				PRODUCT_MODULE_NAME = KinoAppRouter;
+				PRODUCT_NAME = KinoAppRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C3B0EC0797814D67F596C83920CCC61 /* Build configuration list for PBXNativeTarget "Pods-KinoAppRouter_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0295E66C3AB4A108281BBC44CB97FFE /* Debug */,
+				BA25186C18E813E058DF9B455DC78C24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50646285DD9FD95AF390BDA3FB1948EA /* Debug */,
+				58DCB2BA7C34E84C00C38CEF18A96D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95BB568E9DAC748C3E28F1CEB45AD519 /* Build configuration list for PBXNativeTarget "KinoAppRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE65576B966724AF6BA605E5A015975E /* Debug */,
+				CDE2F5010D0E08E0F404B7A1FD508CA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

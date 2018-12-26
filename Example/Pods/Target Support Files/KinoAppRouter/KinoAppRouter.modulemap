@@ -1,0 +1,6 @@
+framework module KinoAppRouter {
+  umbrella header "KinoAppRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

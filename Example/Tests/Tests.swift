@@ -3,26 +3,52 @@ import KinoAppRouter
 
 class Tests: XCTestCase {
     
+    var input: Array<Any>! = nil
+    
+    let router = Router()
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        input = (JSONReader.read("movies") as? Dictionary<String, Any>)?["Items"] as? Array<Any>
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+        
+        input = nil
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
-        }
+    func testRouter() {
+        XCTAssertNotNil(input, "No input data")
+        // TODO: - Create router instance
+        let urls = input.enumerated().compactMap({ index, json -> URL? in
+            if let url = router.url(json: json) {
+                return url
+            }
+            XCTFail("Couldn't create url from json[\(index)]")
+            return nil
+        })
+        let configs = urls.enumerated().compactMap({ index, url -> Router.DetailsConfig? in
+            if let config = router.detailsConfig(from: url) {
+                return config
+            }
+            XCTFail("Couldn't create config from url[\(index)]")
+            return nil
+        })
+        configs.enumerated().forEach({ index, config in
+            do {
+                try router.checkConfig(config)
+            } catch {
+                if let err = error as? DetailsConfigError {
+                    XCTFail(err.localizedDescription)
+                } else {
+                    XCTFail(error.localizedDescription)
+                }
+            }
+        })
+        
+        XCTAssert(configs.count == input.count, "Some of urls is not parsed or not configured")
     }
     
 }
