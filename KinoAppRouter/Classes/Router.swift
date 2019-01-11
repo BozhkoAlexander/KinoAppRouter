@@ -11,7 +11,11 @@ public class Router {
     
     let scheme: String
     
-    public init() {
+    // MARK: - Singletone
+    
+    public static let shared = Router()
+
+    internal init() {
         self.scheme = Router.scheme()
     }
     
