@@ -25,10 +25,10 @@ public extension Router {
             self.preloaded = preloaded
         }
         
-        public var preloadedJson: Array<Dictionary<String, Any>>? {
+        public var preloadedJson: Any? {
             guard let data = preloaded?.data(using: .utf8) else { return nil }
             do {
-                return try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Array<Dictionary<String, Any>>
+                return try JSONSerialization.jsonObject(with: data, options: .allowFragments)
             } catch {
                 return nil
             }

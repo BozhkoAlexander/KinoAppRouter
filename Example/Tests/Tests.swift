@@ -5,7 +5,7 @@ class Tests: XCTestCase {
     
     var input: Array<Any>! = nil
     
-    let router = Router()
+    let router = Router.shared
     
     override func setUp() {
         super.setUp()
