@@ -21,14 +21,16 @@ class Tests: XCTestCase {
     
     func testRouter() {
         XCTAssertNotNil(input, "No input data")
-        // TODO: - Create router instance
-        let urls = input.enumerated().compactMap({ index, json -> URL? in
+        var urls = input.enumerated().compactMap({ index, json -> URL? in
             if let url = router.url(json: json) {
                 return url
             }
             XCTFail("Couldn't create url from json[\(index)]")
             return nil
         })
+        // Add custom urls to test
+        let customUrls = CustomURL.allCases.compactMap({ $0.url })
+        urls.append(contentsOf: customUrls)
         let configs = urls.enumerated().compactMap({ index, url -> Router.DetailsConfig? in
             if let config = router.detailsConfig(from: url) {
                 return config

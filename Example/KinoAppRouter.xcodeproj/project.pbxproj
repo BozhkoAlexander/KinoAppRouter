@@ -13,6 +13,7 @@
 		FA9C6E0B21D3699E00DDCA7E /* JSONReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */; };
 		FA9C6E0D21D374C900DDCA7E /* Router+Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */; };
 		FA9C6E1121D37E7800DDCA7E /* TestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1021D37E7800DDCA7E /* TestError.swift */; };
+		FA9E2D68222FA57C003A46EC /* CustomUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9E2D67222FA57C003A46EC /* CustomUrls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONReader.swift; sourceTree = "<group>"; };
 		FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+Movie.swift"; sourceTree = "<group>"; };
 		FA9C6E1021D37E7800DDCA7E /* TestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestError.swift; sourceTree = "<group>"; };
+		FA9E2D67222FA57C003A46EC /* CustomUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUrls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				FA9C6E0A21D3699E00DDCA7E /* JSONReader.swift */,
 				FA9C6E0C21D374C900DDCA7E /* Router+Movie.swift */,
 				FA9C6E1021D37E7800DDCA7E /* TestError.swift */,
+				FA9E2D67222FA57C003A46EC /* CustomUrls.swift */,
 				FA9C6E0821D3697400DDCA7E /* movies.json */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
@@ -232,6 +235,7 @@
 			files = (
 				FA9C6E1121D37E7800DDCA7E /* TestError.swift in Sources */,
 				FA9C6E0D21D374C900DDCA7E /* Router+Movie.swift in Sources */,
+				FA9E2D68222FA57C003A46EC /* CustomUrls.swift in Sources */,
 				FA9C6E0B21D3699E00DDCA7E /* JSONReader.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
