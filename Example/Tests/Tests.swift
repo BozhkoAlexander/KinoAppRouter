@@ -50,7 +50,7 @@ class Tests: XCTestCase {
             }
         })
         
-        XCTAssert(configs.count == input.count, "Some of urls is not parsed or not configured")
+        XCTAssert(configs.count == input.count + customUrls.count, "Some of urls is not parsed or not configured")
     }
     
 }

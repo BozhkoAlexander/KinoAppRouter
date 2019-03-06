@@ -84,8 +84,8 @@ public class Router {
             if rear == nil && front == nil {
                 let json = q.filter({ $0.name == jsonKey }).first?.value
                 if json != nil {
-                    let id = String(format: "%@-%@", pageId, frontKey)
-                    front = PageConfig(id: id, needsPaging: false, preloaded: json)
+                    let id = String(format: "%@-%@", pageId, rearKey)
+                    rear = PageConfig(id: id, needsPaging: false, preloaded: json)
                 }
             }
         }
