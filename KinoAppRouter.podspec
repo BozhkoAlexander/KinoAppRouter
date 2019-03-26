@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KinoAppRouter'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'KinoAppRouter is module for routing inside a kino app.'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ KinoAppRouter is module for routing inside a kino app, which uses universal page
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 
   s.source_files = 'KinoAppRouter/Classes/**/*'
   

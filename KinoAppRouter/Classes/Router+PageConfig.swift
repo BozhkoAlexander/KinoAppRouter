@@ -9,9 +9,9 @@ import Foundation
 
 public extension Router {
     
-    public typealias DetailsConfig = (rear: PageConfig?, front: PageConfig?)
+    typealias DetailsConfig = (rear: PageConfig?, front: PageConfig?)
     
-    public struct PageConfig {
+    struct PageConfig {
         
         public var id: String
         
