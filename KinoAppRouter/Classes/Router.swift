@@ -65,16 +65,16 @@ public class Router {
         var front: PageConfig? = nil
         
         if let q = components.queryItems {
-            let rearId = q.filter({ $0.name == rearKey }).first?.value
-            let rearJson = q.filter({ $0.name == rearJsonKey }).first?.value
+            let rearId = q.filter({ $0.name.lowercased() == rearKey }).first?.value
+            let rearJson = q.filter({ $0.name.lowercased() == rearJsonKey }).first?.value
             if rearId != nil || rearJson != nil {
                 let needsPaging = rearId != nil
                 let id = needsPaging ? rearId! : String(format: "%@-%@", pageId, rearKey)
                 rear = PageConfig(id: id, needsPaging: needsPaging, preloaded: rearJson)
             }
             
-            let frontId = q.filter({ $0.name == frontKey }).first?.value
-            let frontJson = q.filter({ $0.name == frontJsonKey }).first?.value
+            let frontId = q.filter({ $0.name.lowercased() == frontKey }).first?.value
+            let frontJson = q.filter({ $0.name.lowercased() == frontJsonKey }).first?.value
             if frontId != nil || frontJson != nil {
                 let needsPaging = frontId != nil
                 let id = needsPaging ? frontId! : String(format: "%@-%@", pageId, frontKey)
@@ -82,7 +82,7 @@ public class Router {
             }
             
             if rear == nil && front == nil {
-                let json = q.filter({ $0.name == jsonKey }).first?.value
+                let json = q.filter({ $0.name.lowercased() == jsonKey }).first?.value
                 if json != nil {
                     let id = String(format: "%@-%@", pageId, rearKey)
                     rear = PageConfig(id: id, needsPaging: false, preloaded: json)
@@ -97,9 +97,9 @@ public class Router {
     
     private let pageKey = "page"
     
-    private let rearKey = "rear"
+    private let rearKey = "rearurl"
     private let rearJsonKey = "rearjson"
-    private let frontKey = "front"
+    private let frontKey = "fronturl"
     private let frontJsonKey = "frontjson"
     private let jsonKey = "json"
     

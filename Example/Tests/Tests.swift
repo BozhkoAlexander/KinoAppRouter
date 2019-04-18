@@ -42,10 +42,11 @@ class Tests: XCTestCase {
             do {
                 try router.checkConfig(config)
             } catch {
+                let string = "\(index): \(urls[index]) - "
                 if let err = error as? DetailsConfigError {
-                    XCTFail(err.localizedDescription)
+                    XCTFail(string + err.localizedDescription)
                 } else {
-                    XCTFail(error.localizedDescription)
+                    XCTFail(string + error.localizedDescription)
                 }
             }
         })

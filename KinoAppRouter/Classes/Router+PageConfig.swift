@@ -19,7 +19,13 @@ public extension Router {
         
         public var preloaded: String?
         
-        public init(id: String, needsPaging: Bool = false, preloaded: String? = nil) {
+        public var url: URL? {
+            guard needsPaging else { return nil }
+            return URL(string: id)
+        }
+        
+        public init?(id: String, needsPaging: Bool = false, preloaded: String? = nil) {
+            guard !id.isEmpty else { return nil }
             self.id = id
             self.needsPaging = needsPaging
             self.preloaded = preloaded
