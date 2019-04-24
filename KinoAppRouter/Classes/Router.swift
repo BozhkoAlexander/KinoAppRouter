@@ -65,7 +65,7 @@ public class Router {
         var front: PageConfig? = nil
         
         if let q = components.queryItems {
-            let rearId = q.filter({ $0.name.lowercased() == rearKey }).first?.value
+            let rearId = q.filter({ $0.name.lowercased() == rearKey || $0.name.lowercased() == urlKey }).first?.value
             let rearJson = q.filter({ $0.name.lowercased() == rearJsonKey }).first?.value
             if rearId != nil || rearJson != nil {
                 let needsPaging = rearId != nil
@@ -101,6 +101,7 @@ public class Router {
     private let rearJsonKey = "rearjson"
     private let frontKey = "fronturl"
     private let frontJsonKey = "frontjson"
+    private let urlKey = "url"
     private let jsonKey = "json"
     
 }
