@@ -17,6 +17,8 @@ public extension Router {
         
         public var needsPaging: Bool
         
+        public var needsTitle: Bool
+        
         public var preloaded: String?
         
         public var url: URL? {
@@ -24,10 +26,11 @@ public extension Router {
             return URL(string: id)
         }
         
-        public init?(id: String, needsPaging: Bool = false, preloaded: String? = nil) {
+        public init?(id: String, needsPaging: Bool = false, needsTitle: Bool = true, preloaded: String? = nil) {
             guard !id.isEmpty else { return nil }
             self.id = id
             self.needsPaging = needsPaging
+            self.needsTitle = needsTitle
             self.preloaded = preloaded
         }
         

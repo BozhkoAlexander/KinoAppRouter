@@ -13,6 +13,7 @@
 		81A493E904D690DAD04BDA068B004102 /* KinoAppRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740066561ED6072C516C70A4ABFEFEEE /* KinoAppRouter-dummy.m */; };
 		93D7687F70618D3B7D984E4CA4B70F63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		B8708202052B5F99F7D48956EB6669CE /* KinoAppRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5693AA6824A6C49D7343C95E5458B2EB /* KinoAppRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA02976F2297D64200977867 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02976E2297D64200977867 /* String+Extensions.swift */; };
 		FA9C6E1621D3B71B00DDCA7E /* Router+PageConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */; };
 		FA9C6E1821D3B71B00DDCA7E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9C6E1521D3B71B00DDCA7E /* Router.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E65D36C829F4FCA98A455D933E6BFE01 /* KinoAppRouter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KinoAppRouter.xcconfig; sourceTree = "<group>"; };
 		E9C84E1B00B2D37648070BF277B304DB /* Pods-KinoAppRouter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KinoAppRouter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA02976E2297D64200977867 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Router+PageConfig.swift"; sourceTree = "<group>"; };
 		FA9C6E1521D3B71B00DDCA7E /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FF360F93ACDBCEDF2E4167F583FB8DDD /* Pods-KinoAppRouter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KinoAppRouter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				FA9C6E1321D3B71B00DDCA7E /* Router+PageConfig.swift */,
 				FA9C6E1521D3B71B00DDCA7E /* Router.swift */,
+				FA02976E2297D64200977867 /* String+Extensions.swift */,
 			);
 			name = Classes;
 			path = KinoAppRouter/Classes;
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA02976F2297D64200977867 /* String+Extensions.swift in Sources */,
 				81A493E904D690DAD04BDA068B004102 /* KinoAppRouter-dummy.m in Sources */,
 				FA9C6E1621D3B71B00DDCA7E /* Router+PageConfig.swift in Sources */,
 				FA9C6E1821D3B71B00DDCA7E /* Router.swift in Sources */,

@@ -15,12 +15,15 @@ enum DetailsConfigError: Error {
     
     case noContent
     
+    case wrongContent
+    
     case duplicatedPages
     
     var localizedDescription: String {
         switch self {
         case .unknown: return "Unknown error"
         case .noContent: return "No content"
+        case .wrongContent: return "Wrong content"
         case .duplicatedPages: return "Duplicated pages"
         }
     }
@@ -29,9 +32,14 @@ enum DetailsConfigError: Error {
 
 extension Router {
     
-    func checkConfig(_ detailsConfig: Router.DetailsConfig) throws {
+    func checkConfig(_ detailsConfig: Router.DetailsConfig, custom: CustomURL?) throws {
         let rear = detailsConfig.rear
         let front = detailsConfig.front
+        if let custom = custom, custom == .nonTitledProfile {
+            guard rear?.needsTitle == false else {
+                throw DetailsConfigError.wrongContent
+            }
+        }
         guard rear != nil || front != nil else {
             throw DetailsConfigError.noContent
         }

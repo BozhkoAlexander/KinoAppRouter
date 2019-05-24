@@ -29,8 +29,9 @@ class Tests: XCTestCase {
             return nil
         })
         // Add custom urls to test
-        let customUrls = CustomURL.allCases.compactMap({ $0.url })
-        urls.append(contentsOf: customUrls)
+        let customs = CustomURL.allCases
+        let customUrls = customs.compactMap({ $0.url })
+        urls.insert(contentsOf: customUrls, at: 0)
         let configs = urls.enumerated().compactMap({ index, url -> Router.DetailsConfig? in
             if let config = router.detailsConfig(from: url) {
                 return config
@@ -40,7 +41,8 @@ class Tests: XCTestCase {
         })
         configs.enumerated().forEach({ index, config in
             do {
-                try router.checkConfig(config)
+                let custom = customs.count > index ? customs[index] : nil
+                try router.checkConfig(config, custom: custom)
             } catch {
                 let string = "\(index): \(urls[index]) - "
                 if let err = error as? DetailsConfigError {
