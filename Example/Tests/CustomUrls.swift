@@ -15,6 +15,7 @@ enum CustomURL: String, CaseIterable {
     case newMovieDetails = "bergen-kino://page/movie?frontUrl=https%3a%2f%2fapidev.filmgrail.com%2fapiv2_22%2fMovies%2fFront%2fGet%3fid%3d781535%26showtimeDate%3d&rearUrl="
     case profile = "bergen-kino://page/custom?url=https%3A%2F%2Fapidev.filmgrail.com%2Fapiv2_22%2FUser%2Fprofile%2FGet%3Fid%3D17295"
     case nonTitledProfile = "bergen-kino://page/custom?url=https%3A%2F%2Fapidev.filmgrail.com%2Fapiv2_22%2FUser%2Fprofile%2FGet%3Fid%3D17295&needsTitle=false"
+    case rearlayout = "bergen-kino://page/movie?frontUrl=https%3A%2F%2Fapidev.filmgrail.com%2Fapiv2_23%2FMovies%2FFront%2FGet%3Fid%3D776756%26showtimeDate%3D&rearUrl=https%3A%2F%2Fapidev.filmgrail.com%2Fapiv2_23%2FMovies%2FRear%2FGet%3Fid%3D776756&rearLayout=fullscreen"
     
     var url: URL? {
         return URL(string: rawValue)

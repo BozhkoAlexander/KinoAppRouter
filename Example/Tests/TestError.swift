@@ -35,9 +35,17 @@ extension Router {
     func checkConfig(_ detailsConfig: Router.DetailsConfig, custom: CustomURL?) throws {
         let rear = detailsConfig.rear
         let front = detailsConfig.front
-        if let custom = custom, custom == .nonTitledProfile {
-            guard rear?.needsTitle == false else {
-                throw DetailsConfigError.wrongContent
+        if let custom = custom {
+            switch custom {
+            case .nonTitledProfile:
+                guard rear?.needsTitle == false else {
+                    throw DetailsConfigError.wrongContent
+                }
+            case .rearlayout:
+                guard rear?.layout == .fullscreen else {
+                    throw DetailsConfigError.wrongContent
+                }
+            default: break
             }
         }
         guard rear != nil || front != nil else {

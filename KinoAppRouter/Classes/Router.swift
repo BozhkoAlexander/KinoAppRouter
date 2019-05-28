@@ -68,22 +68,24 @@ public class Router {
             let rearId = q.filter({ $0.name.lowercased() == rearKey || $0.name.lowercased() == urlKey }).first?.value
             let rearNeedsTitle = q.filter({ $0.name.lowercased() == needsTitleKey }).first?.value?.boolValue
             let rearJson = q.filter({ $0.name.lowercased() == rearJsonKey }).first?.value
+            let rearLayout = q.filter({ $0.name.lowercased() == rearLayoutKey || $0.name.lowercased() == layoutKey }).first?.value
             if rearId != nil || rearJson != nil {
                 let needsPaging = rearId != nil
                 let id = needsPaging ? rearId! : String(format: "%@-%@", pageId, rearKey)
                 if let needsTitle = rearNeedsTitle {
-                    rear = PageConfig(id: id, needsPaging: needsPaging, needsTitle: needsTitle, preloaded: rearJson)
+                    rear = PageConfig(id: id, needsPaging: needsPaging, needsTitle: needsTitle, preloaded: rearJson, layout: rearLayout)
                 } else {
-                    rear = PageConfig(id: id, needsPaging: needsPaging, preloaded: rearJson)
+                    rear = PageConfig(id: id, needsPaging: needsPaging, preloaded: rearJson, layout: rearLayout)
                 }
             }
             
             let frontId = q.filter({ $0.name.lowercased() == frontKey }).first?.value
             let frontJson = q.filter({ $0.name.lowercased() == frontJsonKey }).first?.value
+            let frontLayout = q.filter({ $0.name.lowercased() == frontLayoutKey }).first?.value
             if frontId != nil || frontJson != nil {
                 let needsPaging = frontId != nil
                 let id = needsPaging ? frontId! : String(format: "%@-%@", pageId, frontKey)
-                front = PageConfig(id: id, needsPaging: needsPaging, preloaded: frontJson)
+                front = PageConfig(id: id, needsPaging: needsPaging, preloaded: frontJson, layout: frontLayout)
             }
             
             if rear == nil && front == nil {
@@ -104,11 +106,14 @@ public class Router {
     
     private let rearKey = "rearurl"
     private let rearJsonKey = "rearjson"
+    private let rearLayoutKey = "rearlayout"
     private let frontKey = "fronturl"
     private let frontJsonKey = "frontjson"
+    private let frontLayoutKey = "frontlayout"
     private let urlKey = "url"
     private let jsonKey = "json"
     private let needsTitleKey = "needstitle"
+    private let layoutKey = "layout"
     
 }
 

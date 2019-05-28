@@ -13,6 +13,22 @@ public extension Router {
     
     struct PageConfig {
         
+        public enum Layout: String {
+            
+            case `default` = "default"
+            
+            case fullscreen = "fullscreen"
+            
+            init(_ value: String?) {
+                if let value = value, let this = Layout(rawValue: value) {
+                    self = this
+                } else {
+                    self = .default
+                }
+            }
+            
+        }
+        
         public var id: String
         
         public var needsPaging: Bool
@@ -21,17 +37,20 @@ public extension Router {
         
         public var preloaded: String?
         
+        public var layout: Layout
+        
         public var url: URL? {
             guard needsPaging else { return nil }
             return URL(string: id)
         }
         
-        public init?(id: String, needsPaging: Bool = false, needsTitle: Bool = true, preloaded: String? = nil) {
+        public init?(id: String, needsPaging: Bool = false, needsTitle: Bool = true, preloaded: String? = nil, layout layoutValue: String? = nil) {
             guard !id.isEmpty else { return nil }
             self.id = id
             self.needsPaging = needsPaging
             self.needsTitle = needsTitle
             self.preloaded = preloaded
+            self.layout = Layout(layoutValue)
         }
         
         public var preloadedJson: Any? {
