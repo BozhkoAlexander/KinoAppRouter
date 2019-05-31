@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KinoAppRouter'
-  s.version          = '0.1.13'
+  s.version          = '0.1.14'
   s.summary          = 'KinoAppRouter is module for routing inside a kino app.'
 
 # This description is used to generate tags and improve search results.
