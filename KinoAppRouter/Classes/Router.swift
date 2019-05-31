@@ -66,7 +66,7 @@ public class Router {
         
         if let q = components.queryItems {
             let rearId = q.filter({ $0.name.lowercased() == rearKey || $0.name.lowercased() == urlKey }).first?.value
-            let rearNeedsTitle = q.filter({ $0.name.lowercased() == needsTitleKey }).first?.value?.boolValue
+            let rearNeedsTitle = q.filter({ $0.name.lowercased() == rearNeedsTitleKey || $0.name.lowercased() == needsTitleKey }).first?.value?.boolValue
             let rearJson = q.filter({ $0.name.lowercased() == rearJsonKey }).first?.value
             let rearLayout = q.filter({ $0.name.lowercased() == rearLayoutKey || $0.name.lowercased() == layoutKey }).first?.value
             if rearId != nil || rearJson != nil {
@@ -80,12 +80,17 @@ public class Router {
             }
             
             let frontId = q.filter({ $0.name.lowercased() == frontKey }).first?.value
+            let frontNeedsTitle = q.filter({ $0.name.lowercased() == frontNeedsTitleKey }).first?.value?.boolValue
             let frontJson = q.filter({ $0.name.lowercased() == frontJsonKey }).first?.value
             let frontLayout = q.filter({ $0.name.lowercased() == frontLayoutKey }).first?.value
             if frontId != nil || frontJson != nil {
                 let needsPaging = frontId != nil
                 let id = needsPaging ? frontId! : String(format: "%@-%@", pageId, frontKey)
-                front = PageConfig(id: id, needsPaging: needsPaging, preloaded: frontJson, layout: frontLayout)
+                if let needsTitle = frontNeedsTitle {
+                    front = PageConfig(id: id, needsPaging: needsPaging, needsTitle: needsTitle, preloaded: frontJson, layout: frontLayout)
+                } else {
+                    front = PageConfig(id: id, needsPaging: needsPaging, preloaded: frontJson, layout: frontLayout)
+                }
             }
             
             if rear == nil && front == nil {
@@ -106,10 +111,14 @@ public class Router {
     
     private let rearKey = "rearurl"
     private let rearJsonKey = "rearjson"
+    private let rearNeedsTitleKey = "rearneedstitle"
     private let rearLayoutKey = "rearlayout"
+    
     private let frontKey = "fronturl"
     private let frontJsonKey = "frontjson"
+    private let frontNeedsTitleKey = "frontneedstitle"
     private let frontLayoutKey = "frontlayout"
+    
     private let urlKey = "url"
     private let jsonKey = "json"
     private let needsTitleKey = "needstitle"
